@@ -1,16 +1,12 @@
-{{ title }}
-<br/>
 
-{{ name }}
-
-<br/>
+<!-- Aula 01 -->
 
 <!-- Forma One Way Data Binding - [] -->
 <!--
   Com isso o valor só será exibido, não fará nenhuma atualização na propriedade,
   ou seja, ele fará um ligação somente de uma via.
  -->
-<input [ngModel]="name" name="name"/>
+<!-- <input [ngModel]="name" name="name"/> -->
 
 
 <!-- Forma Two Way Data Binding [()] -->
@@ -18,4 +14,13 @@
   Com isso o valor será tanto exibido como também pode sofrer atualização, fazendo
   assim uma ligação de duas vias.
 -->
-<input [(ngModel)]="name" name="name2" />
+<!-- <input [(ngModel)]="name" name="name2" /> -->
+
+
+
+
+<!-- Aula 02 -->
+
+<div class="container">
+  <app-course-list></app-course-list>
+</div>
