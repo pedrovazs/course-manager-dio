@@ -29,7 +29,7 @@ export class CourseListComponent implements OnInit {
         this.filteredCourses = this._courses;
     }
 
-
+    // Filtro de pesquisa
     set filter(value: string) {
         this._filterBy = value;
 
