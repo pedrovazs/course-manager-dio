@@ -1,15 +1,15 @@
 <h2>Course Info</h2>
 
-<hr>
+<hr/>
 
 <!-- Variável de Template -->
-<form #courseForm='ngForm'>
+<form #courseForm='ngForm' *ngIf="course">
 
     <div class="form-group row">
         <label class="col-sm-2 col-form-label">Name:</label>
         <div class="col-sm-10">
             <!-- Two Way Data Binding -->
-            <input [(ngModel)]="course!.name"
+            <input [(ngModel)]="course.name"
                 required name="name"
                 #courseName="ngModel"
                 [ngClass] = "{'is-invalid': courseName.invalid}"
@@ -25,7 +25,7 @@
         <label class="col-sm-2 col-form-label">Price:</label>
         <div class="col-sm-10">
             <!-- Two Way Data Binding -->
-            <input [(ngModel)]="course!.price"
+            <input [(ngModel)]="course.price"
                 required name="price"
                 type="number"
                 #coursePrice="ngModel"
@@ -42,7 +42,7 @@
         <label class="col-sm-2 col-form-label">Rating:</label>
         <div class="col-sm-10">
             <!-- Two Way Data Binding -->
-            <input [(ngModel)]="course!.rating"
+            <input [(ngModel)]="course.rating"
                 required name="rating"
                 type="number"
                 #courseRating="ngModel"
@@ -59,7 +59,7 @@
         <label class="col-sm-2 col-form-label">Description:</label>
         <div class="col-sm-10">
             <!-- Two Way Data Binding -->
-            <textarea [(ngModel)]="course!.description"
+            <textarea [(ngModel)]="course.description"
                 required name="description"
                 #courseDescription="ngModel"
                 [ngClass] = "{'is-invalid': courseDescription.invalid}"
