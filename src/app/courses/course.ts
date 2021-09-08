@@ -1,12 +1,12 @@
 export class Course {
 
-    id: number = 0;
-    name: string = '';
-    releaseDate: string = '';
-    description: string = '';
-    duration: number = 0;
-    code: string = '';
-    rating: number = 0;
-    price: number = 0;
-    imageUrl: string = '';
+    id!: number;
+    name!: string;
+    releaseDate!: string;
+    description!: string;
+    duration!: number;
+    code!: string;
+    rating!: number;
+    price!: number;
+    imageUrl!: string;
 }
